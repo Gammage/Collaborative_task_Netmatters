@@ -1,0 +1,26 @@
+// ======================================
+//  Partial Imports
+// ======================================
+
+
+//TO UPDATE TO CORRECT LINKS - NAME CHANGES ===========================================================
+//===========================================================
+// Utilities
+@import 'utilities/variables',
+        'utilities/mixins',
+        'utilities/functions';
+        
+// Base Styles     
+@import 'base/normalize',
+        'base/base';
+
+// Layout Styles
+@import 'layout/header',
+        'layout/main-index',
+        'layout/footer',
+        'layout/main-about',
+        'layout/main-contact';
+        
+// Component Styles
+@import 'components/buttons',
+        'components/icons';
