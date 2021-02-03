@@ -1,0 +1,204 @@
+body {
+
+    header {
+
+        #hder_content_container {
+            width: 100%;
+
+            #hder_content {
+                width: $content-xs;
+                margin: auto;
+ 
+                #hder_banner {
+                    width: 100%;
+                    height: 50px;
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    // border: 1px solid blue;
+
+                    #hder_banner_logo {
+                        width: 40%;
+                        display: block;
+                        // border: 1px solid blue;
+
+                        h1 {
+                            color: $red;
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            margin: 0;
+                        }
+
+                        #hder_terracotta {
+                            font-family: $logo-font;
+                        }
+
+                        #hder_cater {
+                            font-family: $title-font;
+                        }
+                    }
+
+                    #hder_banner_middle {
+                        height: 100%;
+                        width: 20%;
+                        display: block;
+                        // border: 1px solid blue;
+                    }
+
+                    #hder_banner_inner {
+                        padding: 5px 5px;
+                        width: 40%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        // border: 1px solid blue;
+
+                        #hder_email,
+                        #hder_number {
+                            display: block;
+                            // border: 1px solid blue;
+
+                            .mobile {
+                                display: none;
+                            }
+
+                            a {
+                                // display: block;
+                                font-size: 30px;
+                            }
+                        }
+
+                        #hder_burger {
+                            #burger_button {
+                                display: block;
+                                background-color: black;
+                                height: 30px;
+                                width: 30px;
+
+                                .btn_line {
+                                    display: block;
+                                    height: 1px;
+                                    width: 10px;
+                                    padding: 5px 0px;
+                                }
+                            }
+                        }
+
+
+
+                    }   
+                }
+
+                #hder_description {
+                    // border: 1px solid yellow;
+                    text-align: center;
+
+                    #hder_p {
+                        margin: 10px 0px;
+                    }
+
+                    #hder_book {
+                        display: block;
+                        padding: 5px 15px;
+                        background-color: red;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// @media (min-width: $break-sm){}
+@media (min-width: $break-med) {
+    body {
+
+        header {
+
+            #hder_content_container {
+
+                #hder_content {
+                    width: $content-med;
+
+                    #hder_banner {
+
+                        #hder_banner_logo {
+                            width: 40%;
+                            border: 1px solid blue;
+                        }
+
+                        #hder_banner_middle {
+                            width: 20%;
+                            border: 1px solid blue;
+                        }
+
+                        #hder_banner_inner {
+                            width: 40%;
+                            flex-direction: row;
+
+                            #hder_email,
+                            #hder_number {
+                                
+                                a{
+                                    font-size: 20px;
+                                }
+
+                                .mobile {
+                                    display: block;                     
+                                }
+                            }
+
+                            #hder_burger {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    #hder_description {
+
+                        display: flex;
+                        flex-direction: row;
+
+                        #hder_description_ctn_first {
+                            display: block;
+                            width: 50%;
+                            border: 1px solid red;
+                        }
+
+                        #hder_description_ctn {
+                        width: 50%;
+                        text-align: right;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        nav {
+    
+            #nav_content_container {
+                width: 100%;
+                background-color: $red;
+    
+                #nav_content {
+                    width: $content-med;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        color: $white;
+                        font-family: $p-font;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// @media (min-width: $break-lg) {}
