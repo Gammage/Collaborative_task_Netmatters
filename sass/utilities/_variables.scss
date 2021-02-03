@@ -14,38 +14,46 @@ $white: #ffffff; //correct, they have used pure white
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 // //BREAKPOINTS
-// $break-xs: 767px;
-// $break-sm: 768px;
-// $break-med: 993px;
-// $break-lg: 1260px;
+//let me know what breakpoints you think work best
+$break-sm: 768px;
+$break-med: 993px;
+$break-lg: 1260px;
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //TYPOGRAPHY
+//could turn typography info into a mixin for each heading type and paragraph so can collect 
+//all relevant styles in one instruction for each. Also place in the base styles partial so same
+//styles applied throughout
+
+//Fonts
+$title-font: 'Montserrat';
+$logo-font: 'La Belle Aurore';
+$p-font: 'Arial'; //no idea yet, have just put arial in for the time being until we figure it out
+
+//Font-weights - to figure out
 // $regular: 400;
 // $semi-bold:
 // $bold: 600;
 
+//Font-sizes - to figure out
 //h1-size:
 //h2-size:
 //h3-size:
 //p-size: 
 
-//h1-font:
-//h2-font:
-//h3-font:
-//p-font: 
-
+ 
 //////////////////////////////////////////////////////////////////////////////////////////
 //STYLING
-//$round-corner: ;
+//may compile the styles for the underlines. Looks like may need to be a pseudo-element. 
+//Maybe a mixin?
 
 //////////////////////////////////////////////////////////////////////////////////////////
-//TEXT CONTAINER WIDTHS
-    //$width-xs: ;
-    //$width-sm: ;  
-    //$width-med: ; 
-    //$width-lg: ; 
+//TEXT CONTAINER WIDTHS - test widths. Can change once we see how they look on the page.
+$content-xs: 95%;
+$content-sm: 90%;  
+$content-med: 80%; 
+$content-lg: 80%; 
 
 //////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////MAPS///////////////////////////////////////////////////////
