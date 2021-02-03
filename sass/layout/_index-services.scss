@@ -12,3 +12,47 @@
 //     font-weight: 400;
 //     font-size: 16px;
 // }
+
+
+
+#index-services-container {
+    display: flex;
+    flex-direction: column;
+    width: $content-xs;
+    margin: 0 auto;
+    @media (min-width: $break-sm) {
+        width: $content-sm;
+    }
+    @media (min-width: $break-med) {
+        width: $content-med;
+    }
+    @media (min-width: $break-lg) {
+        width: $content-lg;
+    }
+}
+
+.index-services-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.index-service {
+    width: 100%;
+    @media (min-width: $break-sm) {
+        //padding: 0 10%;
+    }
+    @media (min-width: $break-med) {
+        width: 28%;
+        padding: 2%;
+    }
+    // @media (min-width: $break-lg) {
+    //     width: 28%;
+    // }
+}
+
+.index-service img {
+    width: 100%;
+}
