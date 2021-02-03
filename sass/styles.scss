@@ -16,10 +16,17 @@
 
 // Layout Styles
 @import 'layout/header',
-        'layout/main-index',
+        'layout/index-intro',
+        'layout/index-services',
+        'layout/index-slides',
+        'layout/index-partners',
+        'layout/index-book',
         'layout/footer',
-        'layout/main-about',
-        'layout/main-contact';
+        
+        'layout/about-main',
+        'layout/testimonials-main',
+        'layout/services-main',
+        'layout/contact-main';
         
 // Component Styles
 @import 'components/buttons',
