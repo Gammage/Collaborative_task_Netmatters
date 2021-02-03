@@ -354,6 +354,42 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  color: #af473c;
+  font-weight: 900;
+  position: relative;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+
+p {
+  font-family: "Arial";
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  left: 0;
+  bottom: -10px;
+  border-bottom: 1.5px solid #8b8d90;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  left: calc(50% - 50px);
+  bottom: -10px;
+  border-bottom: 1.5px solid #8b8d90;
+}
+
 body header #hder_content_container {
   width: 100%;
 }
@@ -460,6 +496,10 @@ body header #hder_content_container #hder_content #hder_description #hder_book {
   background-color: red;
 }
 
+body nav {
+  display: none;
+}
+
 @media (min-width: 993px) {
   body header #hder_content_container #hder_content {
     width: 80%;
@@ -534,17 +574,105 @@ body header #hder_content_container #hder_content #hder_description #hder_book {
   }
 }
 
-h3 {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 100;
-  font-size: 20px;
+#index-services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
 }
 
-p {
-  font-family: 'La Belle Aurore';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+@media (min-width: 768px) {
+  #index-services-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 993px) {
+  #index-services-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1260px) {
+  #index-services-container {
+    width: 80%;
+  }
+}
+
+#index-services-container h2,
+#index-services-container h3 {
+  text-transform: uppercase;
+}
+
+.index-services-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.index-services-items h3 {
+  margin-top: 15px;
+}
+
+.index-services-items p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.index-service {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index-service .img-cont {
+  max-height: 300px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 993px) {
+  .index-service {
+    width: 30%;
+  }
+  .index-service .img-cont {
+    max-height: 148px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .index-service .img-cont {
+    max-height: 189px;
+  }
+}
+
+.index-service img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
