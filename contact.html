@@ -26,7 +26,7 @@
                 <h2>Contact Us</h2>
                 <div id="contact-container">
                     <div class="contact-info-container">
-                        <h3 class="h3-title">Find Us</h3>
+                        <h3 class="h3-title" id="find-title">Find Us</h3>
                         <div class="contact-info"> 
                             <div id="contact-details">
                                 <p>Terracotta Catering</p>
@@ -47,21 +47,21 @@
                         <form action="contact.html">
                             <fieldset id="contact-fieldset">
                                 <!-- <legend><span class="number">1</span>Your details</legend> -->
-                                <label for="name">Name:</label><br>
+                                <label for="name" class="contact-label">Name:</label><br>
                                 <input type="text" id="name" name="user_name" class="contact-field"><br>
                                 
-                                <label for="email">Email:</label><br>
+                                <label for="email" class="contact-label">Email:</label><br>
                                 <input type="email" id="email" name="user_email" class="contact-field"><br>
                                 
-                                <label for="phone">Phone:</label><br>
+                                <label for="phone" class="contact-label">Phone:</label><br>
                                 <input type="tel" id="phone" name="user_phone" class="contact-field"><br>
 
-                                <label for="message">Message:</label><br>
+                                <label for="message" class="contact-label">Message:</label><br>
                                 <textarea id="message" name="user_message" class="contact-field"></textarea><br>
                              
                                 <div id="gdpr-div">
                                     <input type="checkbox" id="gdpr" value="dance" name="user_interest">
-                                    <label for="gdpr" id="checkbox-label">Please tick this box if you wish to receive marketing information from us. Please see our Privacy Policy for more information on how we use your data</label><br>
+                                    <label for="gdpr" id="checkbox-label" class="contact-label">Please tick this box if you wish to receive marketing information from us. Please see our Privacy Policy for more information on how we use your data</label><br>
                                 </div>
 
                             </fieldset>  

@@ -26,16 +26,27 @@
     .h3-title {
         text-align: center;
         margin-bottom: 20px;
+    }
+    #find-title {
         @include h3-underline;
     }
 }
 
 #contact-container {
-    margin: 0 auto;
-    width: $content-xs;
     display: flex;
     flex-direction: column;
-    //width: 100%;
+}
+
+.contact-info-container {
+    margin: 0 auto;
+    width: $content-xs;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: $break-sm) {
+        align-items: unset;
+        }
     @media (min-width: $break-sm) {
         width: $content-sm;
     }
@@ -45,17 +56,6 @@
     @media (min-width: $break-lg) {
         width: $content-lg;
     }
-}
-
-.contact-info-container {
-    margin-bottom: 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    @media (min-width: $break-sm) {
-        align-items: unset;
-        }
 }
 
 .contact-info {
@@ -98,8 +98,7 @@
 //CONTACT FORM //////////////////////////////////////////////////////////////////////
 
 .contact-form-container {
-    background-color: $grey-light;
-
+    background-color: $grey-dark;
     margin: 0 auto;
     width: 100%;
     margin: 0 auto;
@@ -108,14 +107,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media (min-width: $break-sm) {
-        width: $content-sm;
+    h3 {
+        color: $white;
+        margin-top: 30px;
     }
-    @media (min-width: $break-med) {
-        width: $content-med;
-    }
-    @media (min-width: $break-lg) {
-        width: $content-lg;
+    .h3-title:first-child {
+        @include h3-underline {
+            border: none;
+            border-bottom: 1.5px solid $red;
+        }
     }
 }
 
@@ -135,8 +135,14 @@ form {
 .contact-field {
     width: 100%;
     max-width: 600px;
-    padding-top: 8px;
-    margin-bottom: 20px;
+    padding: 5px; //padding is INSIDE the text field, between the text and the border.
+    margin-bottom: 25px;
+}
+
+.contact-label {
+    display: block;
+    color: $white;
+    margin-bottom: -12px;
 }
 
 #message {
@@ -146,11 +152,16 @@ form {
 #button-div {
     width: 100%;
     display: flex;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
     button {
         margin: 0 auto;
+        background-color: $red;
+        border: none; ///////////////////need to set up a button style guide
+        h3 {
+            margin-top: 0;
+            padding: 15px 50px;
+        }
     }
 }
 
@@ -165,3 +176,4 @@ form {
     margin: auto 0;
     margin-right: 20px;  
 }
+
