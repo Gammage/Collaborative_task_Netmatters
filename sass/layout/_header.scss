@@ -1,24 +1,24 @@
 body {
-
     header {
-
-        #hder_content_container {
+        #header_content_container {
             width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, $header-img-tone), rgba(0, 0, 0, $header-img-tone)), url('../images/header-img.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 10px 0px;
 
-            #hder_content {
+            #header_content {
                 width: $content-xs;
                 margin: auto;
  
-                #hder_banner {
+                #header_banner {
                     width: 100%;
                     height: 50px;
-                    margin-top: 10px;
                     display: flex;
                     flex-direction: row;
-                    // border: 1px solid blue;
 
-                    #hder_banner_logo {
-                        width: 40%;
+                    #header_banner_logo {
+                        width: 50%;
                         display: block;
                         // border: 1px solid blue;
 
@@ -29,78 +29,108 @@ body {
                             margin: 0;
                         }
 
-                        #hder_terracotta {
+                        #header_terracotta {
                             font-family: $logo-font;
                         }
 
-                        #hder_cater {
+                        #header_cater {
                             font-family: $title-font;
                         }
                     }
 
-                    #hder_banner_middle {
+                    #header_banner_middle {
                         height: 100%;
-                        width: 20%;
+                        width: 10%;
                         display: block;
                         // border: 1px solid blue;
                     }
 
-                    #hder_banner_inner {
-                        padding: 5px 5px;
+                    #header_banner_inner {
                         width: 40%;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
-                        // border: 1px solid blue;
 
-                        #hder_email,
-                        #hder_number {
-                            display: block;
-                            // border: 1px solid blue;
+                        #header_email,
+                        #header_number {
+                            display: none;
+                        }
 
-                            .mobile {
-                                display: none;
-                            }
+                        #header_mobile{
+
+                            width: 25%;
 
                             a {
-                                // display: block;
-                                font-size: 30px;
+                                font-size: 40px;
+                                color: $red;
                             }
                         }
 
-                        #hder_burger {
-                            #burger_button {
-                                display: block;
-                                background-color: black;
-                                height: 30px;
-                                width: 30px;
+                        #header_burger_ctn {
+                            height: 50px;
+                            width: 50px;
+                            border: 1.5px solid $red;
+
+                            // background-color: $red;
+                            height: 50px;
+                            width: 50px;
+
+                            #burger_line_ctn {
+                                margin-top: 10px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+
 
                                 .btn_line {
-                                    display: block;
-                                    height: 1px;
-                                    width: 10px;
-                                    padding: 5px 0px;
+                                    background-color: $red;
+                                    height: 3px;
+                                    width: 75%;
+                                    margin: 3px auto 3px auto;
                                 }
                             }
                         }
-
-
-
                     }   
                 }
 
-                #hder_description {
-                    // border: 1px solid yellow;
-                    text-align: center;
+                #header_description {
 
-                    #hder_p {
-                        margin: 10px 0px;
-                    }
+                    #header_description_ctn {
+                        // width: 50%;
+                        text-align: center;
+                        color: $white;
 
-                    #hder_book {
-                        display: block;
+                        h1 {
+                            color: $white;
+                            @include h3-underline;
+                        }
+
+                        #header_p {
+                            margin: 10px 0px;
+                        }
+
+                        #header_book {
+                            text-align: center;
+                            display: block;
+                            padding: 5px 15px;
+                            background-color: red;
+                            color: $white;
+                        }
+                    }    
+                }
+
+                #header_button_ctn {
+                   text-align: center;
+
+                    a{
+                        display: inline-block;
                         padding: 5px 15px;
-                        background-color: red;
+                        background-color: $red;
+                        color: $white;
+                        font-family: $title-font;
+                        text-transform: capitalize;
+                        // font-weight: bold;
+                        margin: 15px 0px;
                     }
                 }
 
@@ -113,73 +143,124 @@ body {
     }
 }
 
-// @media (min-width: $break-sm){}
-@media (min-width: $break-med) {
+@media (min-width: $break-sm){
+
     body {
-
         header {
+            #header_content_container {
+                #header_content {
+                    #header_banner {
 
-            #hder_content_container {
-
-                #hder_content {
-                    width: $content-med;
-
-                    #hder_banner {
-
-                        #hder_banner_logo {
-                            width: 40%;
-                            border: 1px solid blue;
+                        #header_banner_logo {
+                            width: 30%;
                         }
 
-                        #hder_banner_middle {
-                            width: 20%;
-                            border: 1px solid blue;
+                        #header_banner_middle {
+                            width: 0;
                         }
 
-                        #hder_banner_inner {
-                            width: 40%;
-                            flex-direction: row;
+                        #header_banner_inner {
 
-                            #hder_email,
-                            #hder_number {
+                            width: 70%;
+
+                            #header_email,
+                            #header_number {
+                                display: flex;
+                                flex-direction: space-between;
                                 
-                                a{
-                                    font-size: 20px;
-                                }
+                                
+                                a {
+                                    font-size: $p-size;
+                                    font-family: $title-font;
+                                    color: $white;
 
-                                .mobile {
-                                    display: block;                     
+                                    i {
+                                        padding-right: 5px;
+                                    }
+                                }
+                                
+                                #header_number {
+                                    padding-left: 15px;
                                 }
                             }
 
-                            #hder_burger {
+                            #header_email {
+                                margin-right: 20px;
+                            }
+
+                            #header_mobile {
                                 display: none;
                             }
                         }
                     }
 
-                    #hder_description {
+                    // #header_description {
+
+                        // #header_description_ctn {}
+                    // }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $break-med) {
+    body {
+
+        header {
+
+            #header_content_container {
+
+                #header_content {
+                    width: $content-med;
+
+                    #header_banner {
+
+                        #header_banner_middle {
+                            display: none;
+                        }
+
+                        #header_banner_inner {
+                            // width: 50%;
+                            flex-direction: row;
+                            justify-content: flex-end;
+
+                            #header_burger_ctn {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    #header_description {
 
                         display: flex;
                         flex-direction: row;
 
-                        #hder_description_ctn_first {
+                        #header_description_ctn_first {
                             display: block;
-                            width: 50%;
-                            border: 1px solid red;
+                            width: 55%;
+                            // border: 1px solid red;
                         }
 
-                        #hder_description_ctn {
-                        width: 50%;
+                        #header_description_ctn {
+                        width: 45%;
                         text-align: right;
 
+                            h1 {
+                                @include h1-underline-right;
+                            }
                         }
+                    }
+
+                    #header_button_ctn {
+                        text-align: right;
                     }
                 }
             }
         }
 
         nav {
+
+            display: block;
     
             #nav_content_container {
                 width: 100%;
@@ -190,17 +271,20 @@ body {
                     margin: auto;
                     display: flex;
                     flex-direction: row;
+                    text-align: center;
                     justify-content: flex-end;
 
                     a {
                         display: block;
-                        padding: 10px 20px;
+                        // width: 50%;
                         color: $white;
-                        font-family: $p-font;
+                        font-family: $title-font;
+                        padding: 10px 20px;
                     }
                 }
             }
         }
+
     }
 
 }

@@ -11,6 +11,7 @@ $grey-dark: #3c3c3c; //correct. Text too small to color pick, but think it might
 
 //OTHER COLORS 
 $white: #ffffff; //correct, they have used pure white
+$header-img-tone: 0.25; //darkens header image 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 // //BREAKPOINTS
@@ -38,9 +39,9 @@ $p-font: 'Arial'; //no idea yet, have just put arial in for the time being until
 
 //Font-sizes - to figure out
 //$h1-size:
-//$h2-size:
-//$h3-size:
-//$p-size: 
+$h2-size: 30px;
+$h3-size: 25px;
+$p-size: 20px;
 
  
 //////////////////////////////////////////////////////////////////////////////////////////
