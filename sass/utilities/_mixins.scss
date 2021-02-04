@@ -1,6 +1,10 @@
-//heading pseudo-element underlines
-//use @include nameOfMixin; to add to an element
+////////////////////////////////////////////////////////////////////////////////////////////
+//HEADING PSEUDO-ELEMENT UNDERLINES
 
+//use @include nameOfMixin; to add to an element. 
+//if there are display issues the heading position may need to be set to position: relative;
+
+//H2 ALIGNED LEFT
 @mixin h2-underline {
     &::after {
         content: "";
@@ -12,12 +16,27 @@
     } 
 }
 
+//H3 ALIGNED CENTER
+//text align on the heading needs to be set to center for this version. 
 @mixin h3-underline {
     &::after {
         content: "";
         position: absolute;
         width: 100px;
         left: calc(50% - 50px);
+        bottom: -10px;
+        border-bottom: 1.5px solid $grey-light;
+    }
+}
+
+//H3 ALIGNED LEFT
+//text align on the heading needs to be set to left for this version. 
+@mixin h3-underline-left {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        left: 0;
         bottom: -10px;
         border-bottom: 1.5px solid $grey-light;
     }
