@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap%22%3E" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap%22%3E" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- leaflet map below -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
 </head>
 <body>
     <header>
@@ -22,7 +26,7 @@
                 <h2>Contact Us</h2>
                 <div id="contact-container">
                     <div class="contact-info-container">
-                        <h3>Find Us</h3>
+                        <h3 class="h3-title">Find Us</h3>
                         <div class="contact-info"> 
                             <div id="contact-details">
                                 <p>Address L1</p>
@@ -31,11 +35,11 @@
                                 <p>Email</p>
                                 <p>Social?</p>
                             </div> 
-                            <div id="map">MAP</div>
+                            <div id="mapid">MAP</div>
                         </div>
                     </div> <!-- end contact-info-container -->
                     <div class="contact-form-container">
-                        <h3>Send us a Message</h3>
+                        <h3 class="h3-title">Send us a Message</h3>
                         <form action="contact.html">
                             <fieldset id="contact-fieldset">
                                 <!-- <legend><span class="number">1</span>Your details</legend> -->
@@ -58,7 +62,7 @@
                                 
                             </fieldset>  
                             <div id="button-div">
-                                <button type="submit">Send</button>
+                                <button type="submit"><h3>Send</h3></button>
                             </div>
                           </form>
                           
@@ -74,6 +78,11 @@
     <footer>
 
     </footer> <!-- end footer -->
+    <!-- leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="./js/map.js"></script>
 </body> <!-- end body -->
 </html>
 
