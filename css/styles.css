@@ -772,23 +772,36 @@ body nav {
 #contact-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-/* line 35, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+/* line 36, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
 .contact-info-container {
   margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  /* line 39, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  /* line 36, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  .contact-info-container {
+    align-items: unset;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 47, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
   .contact-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: unset;
   }
 }
 
-/* line 47, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+/* line 56, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
 #map {
   width: 200px;
   height: 200px;
@@ -796,39 +809,103 @@ body nav {
 }
 
 @media (min-width: 768px) {
-  /* line 47, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  /* line 56, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
   #map {
     width: 400px;
   }
 }
 
-/* line 56, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+/* line 65, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
 #contact-details {
   margin-bottom: 20px;
 }
 
-/* line 66, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+/* line 75, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
 .contact-form-container {
+  width: 100%;
   margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 @media (min-width: 768px) {
-  /* line 66, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  /* line 75, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
   .contact-form-container {
     width: 600px;
   }
 }
 
-/* line 84, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+@media (min-width: 993px) {
+  /* line 75, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  .contact-form-container {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 75, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  .contact-form-container {
+    width: 1000px;
+  }
+}
+
+/* line 94, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+#contact-fieldset {
+  width: 100%;
+  margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+  /* line 94, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  #contact-fieldset {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 94, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  #contact-fieldset {
+    width: 600px;
+    padding: 20px 50px;
+  }
+}
+
+@media (min-width: 993px) {
+  /* line 94, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  #contact-fieldset {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 94, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+  #contact-fieldset {
+    width: 1000px;
+    padding: 40px 200px;
+  }
+}
+
+/* line 114, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
 .contact-field {
   width: 100%;
   max-width: 600px;
   padding-top: 8px;
   margin-bottom: 20px;
+}
+
+/* line 121, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+#button-div {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+/* line 127, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_contact-main.scss */
+#button-div button {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

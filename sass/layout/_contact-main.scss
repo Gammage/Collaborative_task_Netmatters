@@ -30,10 +30,18 @@
 #contact-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .contact-info-container {
     margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: $break-sm) {
+        align-items: unset;
+        }
 }
 
 .contact-info {
@@ -41,6 +49,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: unset;
     }
 }
 
@@ -64,26 +73,58 @@
 //CONTACT FORM //////////////////////////////////////////////////////////////////////
 
 .contact-form-container {
+    width: 100%;
     margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
     @media (min-width: $break-sm) {
         width: 600px;
     }
-    // @media (min-width: $break-med) {
-    //     width: 600px;
-    // }
-    // @media (min-width: $break-lg) {
-    //     width: 600px;
-    // }
+    @media (min-width: $break-med) {
+        width: 700px;
+    }
+    @media (min-width: $break-lg) {
+        width: 1000px;
+    }
 }
 
+
+#contact-fieldset {
+    width: 100%;
+    margin: 30px auto;
+   
+    @media (max-width: $break-sm) {
+        max-width: 500px;
+    }
+    @media (min-width: $break-sm) {
+        width: 600px;
+        padding: 20px 50px;
+    }
+    @media (min-width: $break-med) {
+        width: 700px;
+    }
+    @media (min-width: $break-lg) {
+        width: 1000px;
+        padding: 40px 200px;
+    }
+}
 
 .contact-field {
     width: 100%;
     max-width: 600px;
     padding-top: 8px;
     margin-bottom: 20px;
+}
+
+#button-div {
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+
+    button {
+        margin: 0 auto;
+    }
 }
