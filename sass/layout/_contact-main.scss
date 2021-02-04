@@ -1,3 +1,4 @@
+
 #contact-us {
     margin: 0 auto;
     width: $content-xs;
@@ -11,9 +12,9 @@
         @include h2-underline;
     }
     h3 {
-        //text-align: center;
+        text-align: center;
         margin-bottom: 20px;
-        @include h3-underline-left;
+        @include h3-underline;
     }
     @media (min-width: $break-sm) {
         width: $content-sm;
@@ -24,6 +25,15 @@
     @media (min-width: $break-lg) {
         width: $content-lg;
     }
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-container {
+    margin-bottom: 30px;
 }
 
 .contact-info {
@@ -41,4 +51,39 @@
     @media (min-width: $break-sm) {
         width: 400px;
     }
+}
+
+#contact-details {
+    margin-bottom: 20px;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+//CONTACT FORM //////////////////////////////////////////////////////////////////////
+
+.contact-form-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    @media (min-width: $break-sm) {
+        width: 600px;
+    }
+    // @media (min-width: $break-med) {
+    //     width: 600px;
+    // }
+    // @media (min-width: $break-lg) {
+    //     width: 600px;
+    // }
+}
+
+
+.contact-field {
+    width: 100%;
+    max-width: 600px;
+    padding-top: 8px;
+    margin-bottom: 20px;
 }

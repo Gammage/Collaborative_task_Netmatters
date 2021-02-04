@@ -19,8 +19,8 @@
     <main>
         <div class="container">
             <div id="contact-us">
+                <h2>Contact Us</h2>
                 <div id="contact-container">
-                    <h2>Contact Us</h2>
                     <div class="contact-info-container">
                         <h3>Find Us</h3>
                         <div class="contact-info"> 
@@ -36,6 +36,34 @@
                     </div> <!-- end contact-info-container -->
                     <div class="contact-form-container">
                         <h3>Send us a Message</h3>
+                        <form action="contact.html">
+                            <fieldset>
+                              <!-- <legend><span class="number">1</span>Your details</legend> -->
+                              <label for="name">Name:</label><br>
+                              <input type="text" id="name" name="user_name" class="contact-field"><br>
+                              
+                              <label for="email">Email:</label><br>
+                              <input type="email" id="email" name="user_email" class="contact-field"><br>
+                              
+                              <label for="phone">Phone:</label><br>
+                              <input type="tel" id="phone" name="user_phone" class="contact-field"><br>
+
+                              <label for="message">Message:</label><br>
+                              <textarea id="message" name="user_message" class="contact-field"></textarea><br>
+                              
+                               <!-- <label>GDPR Tickbox:</label><br> -->
+                                
+                              <input type="checkbox" id="gdpr" value="dance" name="user_interest">
+                               <label for="gdpr" class="">GDPR</label><br>
+    
+                            </fieldset>  
+                         
+                            <button type="submit">Send</button>
+                            
+                          </form>
+                          
+
+
                     </div> <!-- end contact-form-container -->
                 </div> <!-- end contact-container -->
 
