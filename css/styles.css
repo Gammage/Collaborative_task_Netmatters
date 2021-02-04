@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+/* line 11, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 html {
   line-height: 1.15;
   /* 1 */
@@ -17,6 +18,7 @@ html {
 /**
    * Remove the margin in all browsers.
    */
+/* line 23, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 body {
   margin: 0;
 }
@@ -24,6 +26,7 @@ body {
 /**
    * Render the `main` element consistently in IE.
    */
+/* line 31, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 main {
   display: block;
 }
@@ -32,6 +35,7 @@ main {
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
+/* line 40, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -43,9 +47,9 @@ h1 {
    * 1. Add the correct box sizing in Firefox.
    * 2. Show the overflow in Edge and IE.
    */
+/* line 53, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -57,6 +61,7 @@ hr {
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
    */
+/* line 64, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -69,6 +74,7 @@ pre {
 /**
    * Remove the gray background on active links in IE 10.
    */
+/* line 76, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 a {
   background-color: transparent;
 }
@@ -77,19 +83,20 @@ a {
    * 1. Remove the bottom border in Chrome 57-
    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
    */
+/* line 85, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
 /**
    * Add the correct font weight in Chrome, Edge, and Safari.
    */
+/* line 95, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 b,
 strong {
   font-weight: bolder;
@@ -99,6 +106,7 @@ strong {
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
    */
+/* line 105, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 code,
 kbd,
 samp {
@@ -111,6 +119,7 @@ samp {
 /**
    * Add the correct font size in all browsers.
    */
+/* line 116, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -119,6 +128,7 @@ small {
    * Prevent `sub` and `sup` elements from affecting the line height in
    * all browsers.
    */
+/* line 125, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -127,10 +137,12 @@ sup {
   vertical-align: baseline;
 }
 
+/* line 133, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
+/* line 137, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 sup {
   top: -0.5em;
 }
@@ -140,6 +152,7 @@ sup {
 /**
    * Remove the border on images inside links in IE 10.
    */
+/* line 148, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 img {
   border-style: none;
 }
@@ -150,6 +163,7 @@ img {
    * 1. Change the font styles in all browsers.
    * 2. Remove the margin in Firefox and Safari.
    */
+/* line 160, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 button,
 input,
 optgroup,
@@ -169,6 +183,7 @@ textarea {
    * Show the overflow in IE.
    * 1. Show the overflow in Edge.
    */
+/* line 176, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 button,
 input {
   /* 1 */
@@ -179,6 +194,7 @@ input {
    * Remove the inheritance of text transform in Edge, Firefox, and IE.
    * 1. Remove the inheritance of text transform in Firefox.
    */
+/* line 186, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 button,
 select {
   /* 1 */
@@ -188,6 +204,7 @@ select {
 /**
    * Correct the inability to style clickable types in iOS and Safari.
    */
+/* line 195, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -198,6 +215,7 @@ button,
 /**
    * Remove the inner border and padding in Firefox.
    */
+/* line 206, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -209,6 +227,7 @@ button::-moz-focus-inner,
 /**
    * Restore the focus styles unset by the previous rule.
    */
+/* line 218, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -219,6 +238,7 @@ button:-moz-focusring,
 /**
    * Correct the padding in Firefox.
    */
+/* line 229, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -229,9 +249,9 @@ fieldset {
    * 3. Remove the padding so developers are not caught out when they zero out
    *    `fieldset` elements in all browsers.
    */
+/* line 240, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -248,6 +268,7 @@ legend {
 /**
    * Add the correct vertical alignment in Chrome, Firefox, and Opera.
    */
+/* line 253, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 progress {
   vertical-align: baseline;
 }
@@ -255,6 +276,7 @@ progress {
 /**
    * Remove the default vertical scrollbar in IE 10+.
    */
+/* line 261, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -263,10 +285,10 @@ textarea {
    * 1. Add the correct box sizing in IE 10.
    * 2. Remove the padding in IE 10.
    */
+/* line 270, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -275,6 +297,7 @@ textarea {
 /**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
+/* line 280, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -284,6 +307,7 @@ textarea {
    * 1. Correct the odd appearance in Chrome and Safari.
    * 2. Correct the outline style in Safari.
    */
+/* line 290, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -294,6 +318,7 @@ textarea {
 /**
    * Remove the inner padding in Chrome and Safari on macOS.
    */
+/* line 299, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -302,6 +327,7 @@ textarea {
    * 1. Correct the inability to style clickable types in iOS and Safari.
    * 2. Change font properties to `inherit` in Safari.
    */
+/* line 308, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -314,6 +340,7 @@ textarea {
 /*
    * Add the correct display in Edge, IE 10+, and Firefox.
    */
+/* line 320, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 details {
   display: block;
 }
@@ -321,6 +348,7 @@ details {
 /*
    * Add the correct display in all browsers.
    */
+/* line 328, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 summary {
   display: list-item;
 }
@@ -330,6 +358,7 @@ summary {
 /**
    * Add the correct display in IE 10+.
    */
+/* line 339, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 template {
   display: none;
 }
@@ -337,23 +366,26 @@ template {
 /**
    * Add the correct display in IE 10.
    */
+/* line 347, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_normalize.scss */
 [hidden] {
   display: none;
 }
 
+/* line 3, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_base.scss */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: sans-serif;
   letter-spacing: 0.4px;
   padding: 0;
   margin: 0;
 }
 
+/* line 12, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_base.scss */
 a {
   text-decoration: none;
 }
 
+/* line 18, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_base.scss */
 h1,
 h2,
 h3 {
@@ -364,45 +396,46 @@ h3 {
   position: relative;
 }
 
+/* line 28, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_base.scss */
 h2 {
   margin-bottom: 50px;
 }
 
+/* line 32, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_base.scss */
 p {
   font-family: "Arial";
 }
 
+/* line 3, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("../images/header-img.jpeg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/header-img.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px 0px;
 }
 
+/* line 10, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content {
   width: 95%;
   margin: auto;
 }
 
+/* line 14, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner {
   width: 100%;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
+/* line 20, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_logo {
   width: 50%;
   display: block;
 }
 
+/* line 25, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_logo h1 {
   color: #af473c;
   font-size: 20px;
@@ -410,48 +443,49 @@ body header #header_content_container #header_content #header_banner #header_ban
   margin: 0;
 }
 
+/* line 32, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_logo #header_terracotta {
   font-family: "La Belle Aurore";
 }
 
+/* line 36, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_logo #header_cater {
   font-family: "Montserrat";
 }
 
+/* line 41, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_middle {
   height: 100%;
   width: 10%;
   display: block;
 }
 
+/* line 48, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_inner {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+/* line 54, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_inner #header_email,
 body header #header_content_container #header_content #header_banner #header_banner_inner #header_number {
   display: none;
 }
 
+/* line 59, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_inner #header_mobile {
   width: 25%;
 }
 
+/* line 63, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_inner #header_mobile a {
   font-size: 40px;
   color: #af473c;
 }
 
+/* line 69, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_inner #header_burger_ctn {
   height: 50px;
   width: 50px;
@@ -460,20 +494,15 @@ body header #header_content_container #header_content #header_banner #header_ban
   width: 50px;
 }
 
+/* line 78, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_inner #header_burger_ctn #burger_line_ctn {
   margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* line 85, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_banner #header_banner_inner #header_burger_ctn #burger_line_ctn .btn_line {
   background-color: #af473c;
   height: 3px;
@@ -481,15 +510,18 @@ body header #header_content_container #header_content #header_banner #header_ban
   margin: 3px auto 3px auto;
 }
 
+/* line 98, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_description #header_description_ctn {
   text-align: center;
   color: #ffffff;
 }
 
+/* line 103, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_description #header_description_ctn h1 {
   color: #ffffff;
 }
 
+/* line 27, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/utilities/_mixins.scss */
 body header #header_content_container #header_content #header_description #header_description_ctn h1::after {
   content: "";
   position: absolute;
@@ -499,10 +531,12 @@ body header #header_content_container #header_content #header_description #heade
   border-bottom: 1.5px solid #8b8d90;
 }
 
+/* line 108, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_description #header_description_ctn #header_p {
   margin: 10px 0px;
 }
 
+/* line 112, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_description #header_description_ctn #header_book {
   text-align: center;
   display: block;
@@ -511,10 +545,12 @@ body header #header_content_container #header_content #header_description #heade
   color: #ffffff;
 }
 
+/* line 122, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_button_ctn {
   text-align: center;
 }
 
+/* line 125, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body header #header_content_container #header_content #header_button_ctn a {
   display: inline-block;
   padding: 5px 15px;
@@ -525,88 +561,91 @@ body header #header_content_container #header_content #header_button_ctn a {
   margin: 15px 0px;
 }
 
+/* line 141, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
 body nav {
   display: none;
 }
 
 @media (min-width: 768px) {
+  /* line 154, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_logo {
     width: 30%;
   }
+  /* line 158, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_middle {
     width: 0;
   }
+  /* line 162, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_inner {
     width: 70%;
   }
+  /* line 166, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_email,
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_number {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: space-between;
-            flex-direction: space-between;
+    flex-direction: space-between;
   }
+  /* line 172, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_email a,
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_number a {
     font-size: 20px;
     font-family: "Montserrat";
     color: #ffffff;
   }
+  /* line 177, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_email a i,
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_number a i {
     padding-right: 5px;
   }
+  /* line 182, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_email #header_number,
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_number #header_number {
     padding-left: 15px;
   }
+  /* line 187, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_email {
     margin-right: 20px;
   }
+  /* line 191, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_mobile {
     display: none;
   }
 }
 
 @media (min-width: 993px) {
+  /* line 213, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content {
     width: 80%;
   }
+  /* line 218, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_middle {
     display: none;
   }
+  /* line 222, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_inner {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
   }
+  /* line 227, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_banner #header_banner_inner #header_burger_ctn {
     display: none;
   }
+  /* line 233, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_description {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
+  /* line 238, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_description #header_description_ctn_first {
     display: block;
     width: 55%;
   }
+  /* line 244, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_description #header_description_ctn {
     width: 45%;
     text-align: right;
   }
+  /* line 5, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/utilities/_mixins.scss */
   body header #header_content_container #header_content #header_description #header_description_ctn h1::after {
     content: "";
     position: absolute;
@@ -615,31 +654,29 @@ body nav {
     bottom: -10px;
     border-bottom: 1.5px solid #8b8d90;
   }
+  /* line 254, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body header #header_content_container #header_content #header_button_ctn {
     text-align: right;
   }
+  /* line 261, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body nav {
     display: block;
   }
+  /* line 265, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body nav #nav_content_container {
     width: 100%;
     background-color: #af473c;
   }
+  /* line 269, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body nav #nav_content_container #nav_content {
     width: 80%;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     text-align: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
+  /* line 277, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
   body nav #nav_content_container #nav_content a {
     display: block;
     color: #ffffff;
@@ -648,41 +685,42 @@ body nav {
   }
 }
 
+/* line 2, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 #index-services-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 95%;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) {
+  /* line 2, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   #index-services-container {
     width: 90%;
   }
 }
 
 @media (min-width: 993px) {
+  /* line 2, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   #index-services-container {
     width: 80%;
   }
 }
 
 @media (min-width: 1260px) {
+  /* line 2, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   #index-services-container {
     width: 80%;
   }
 }
 
+/* line 16, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 #index-services-container h2,
 #index-services-container h3 {
   text-transform: uppercase;
 }
 
+/* line 16, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/utilities/_mixins.scss */
 #index-services-container h2::after {
   content: "";
   position: absolute;
@@ -692,6 +730,7 @@ body nav {
   border-bottom: 1.5px solid #8b8d90;
 }
 
+/* line 27, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/utilities/_mixins.scss */
 #index-services-container h3::after {
   content: "";
   position: absolute;
@@ -701,78 +740,72 @@ body nav {
   border-bottom: 1.5px solid #8b8d90;
 }
 
+/* line 28, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-services-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   text-align: center;
   width: 100%;
 }
 
+/* line 36, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-services-items h3 {
   margin-top: 15px;
 }
 
+/* line 39, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-services-items p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
+/* line 45, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-service {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
+/* line 49, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-service .img-cont {
   max-height: 300px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 @media (min-width: 993px) {
+  /* line 45, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   .index-service {
     width: 30%;
   }
+  /* line 62, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   .index-service .img-cont {
     max-height: 148px;
   }
 }
 
 @media (min-width: 1260px) {
+  /* line 67, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   .index-service .img-cont {
     max-height: 189px;
   }
 }
 
+/* line 73, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-service img {
   width: 100%;
 }
 
+/* line 3, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn {
   width: 100%;
   background-color: #af473c;
 }
 
+/* line 7, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn h3,
 footer #footer_ctn ul,
 footer #footer_ctn a {
@@ -780,6 +813,7 @@ footer #footer_ctn a {
   text-transform: capitalize;
 }
 
+/* line 14, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_ctn_content {
   width: 95%;
   margin: auto;
@@ -787,6 +821,7 @@ footer #footer_ctn #footer_ctn_content {
   padding: 10px 0px;
 }
 
+/* line 27, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_ctn_content #footer_index #footer_contact h3,
 footer #footer_ctn #footer_ctn_content #footer_index #footer_sections h3,
 footer #footer_ctn #footer_ctn_content #footer_index #footer_follow h3 {
@@ -795,6 +830,7 @@ footer #footer_ctn #footer_ctn_content #footer_index #footer_follow h3 {
   text-transform: uppercase;
 }
 
+/* line 27, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/utilities/_mixins.scss */
 footer #footer_ctn #footer_ctn_content #footer_index #footer_contact h3::after,
 footer #footer_ctn #footer_ctn_content #footer_index #footer_sections h3::after,
 footer #footer_ctn #footer_ctn_content #footer_index #footer_follow h3::after {
@@ -806,6 +842,7 @@ footer #footer_ctn #footer_ctn_content #footer_index #footer_follow h3::after {
   border-bottom: 1.5px solid #8b8d90;
 }
 
+/* line 34, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_ctn_content #footer_index #footer_contact ul,
 footer #footer_ctn #footer_ctn_content #footer_index #footer_sections ul,
 footer #footer_ctn #footer_ctn_content #footer_index #footer_follow ul {
@@ -813,41 +850,41 @@ footer #footer_ctn #footer_ctn_content #footer_index #footer_follow ul {
   list-style-type: none;
 }
 
+/* line 42, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_ctn_content #footer_index #footer_contact .push {
   height: 10px;
 }
 
+/* line 48, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_ctn_content #footer_index #footer_sections li {
   padding-top: 5px;
 }
 
+/* line 55, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_ctn_content #footer_index #footer_follow #footer_icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   margin: 20px auto;
 }
 
+/* line 62, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_ctn_content #footer_index #footer_follow #footer_icons i {
   font-size: 30px;
   padding-right: 5px;
 }
 
+/* line 67, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_ctn_content #footer_index #footer_follow #footer_icons a {
   padding: 0px 10px;
 }
 
+/* line 79, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_copyright {
   margin-top: 20px;
 }
 
+/* line 81, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
 footer #footer_ctn #footer_copyright p {
   text-transform: uppercase;
   color: #ffffff;
@@ -855,22 +892,18 @@ footer #footer_ctn #footer_copyright p {
 }
 
 @media (min-width: 768px) {
+  /* line 95, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
   footer #footer_ctn #footer_ctn_content {
     width: 90%;
   }
+  /* line 98, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
   footer #footer_ctn #footer_ctn_content #footer_index {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     text-align: left;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
+  /* line 40, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/utilities/_mixins.scss */
   footer #footer_ctn #footer_ctn_content #footer_index #footer_contact h3::after,
   footer #footer_ctn #footer_ctn_content #footer_index #footer_sections h3::after,
   footer #footer_ctn #footer_ctn_content #footer_index #footer_follow h3::after {
@@ -881,36 +914,41 @@ footer #footer_ctn #footer_copyright p {
     bottom: -10px;
     border-bottom: 1.5px solid #8b8d90;
   }
+  /* line 114, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
   footer #footer_ctn #footer_ctn_content #footer_index #footer_follow #footer_icons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 0px;
   }
+  /* line 118, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
   footer #footer_ctn #footer_ctn_content #footer_index #footer_follow #footer_icons .icon_ctn {
     padding-bottom: 5px;
   }
+  /* line 122, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
   footer #footer_ctn #footer_ctn_content #footer_index #footer_follow #footer_icons a {
     padding: 0px;
   }
+  /* line 130, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
   footer #footer_ctn #footer_ctn_content #footer_copyright {
     margin-top: 40px;
   }
 }
 
 @media (min-width: 993px) {
+  /* line 143, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
   footer #footer_ctn #footer_ctn_content {
     width: 80%;
   }
+  /* line 148, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
   footer #footer_ctn #footer_ctn_content #footer_index #footer_contact,
   footer #footer_ctn #footer_ctn_content #footer_index #footer_sections,
   footer #footer_ctn #footer_ctn_content #footer_index #footer_follow {
     width: 30%;
   }
+  /* line 154, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */
   footer #footer_ctn #footer_ctn_content #footer_index #footer_push {
     display: block;
     width: 10%;
   }
 }
+
 /*# sourceMappingURL=styles.css.map */
