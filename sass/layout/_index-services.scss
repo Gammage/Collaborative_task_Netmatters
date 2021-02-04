@@ -17,6 +17,12 @@
     h3 {
         text-transform: uppercase;
     }
+    h2 {
+        @include h2-underline;
+    }
+    h3 {
+        @include h3-underline;
+    }
 }
 
 .index-services-items {
