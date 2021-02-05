@@ -4,6 +4,17 @@
 //use @include nameOfMixin; to add to an element. 
 //if there are display issues the heading position may need to be set to position: relative;
 
+@mixin h1-underline-right { ////////////////////////TO ADD
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        right: 0;
+        bottom: -10px;
+        border-bottom: 1.5px solid $grey-light;
+    }
+}
+
 //H2 ALIGNED LEFT
 @mixin h2-underline {
     &::after {
