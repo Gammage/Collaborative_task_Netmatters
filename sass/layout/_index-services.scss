@@ -19,6 +19,7 @@
     }
     h2 {
         @include h2-underline;
+        padding-top: 30px;
     }
     h3 {
         @include h3-underline;
