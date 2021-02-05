@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap%22%3E" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap%22%3E" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- leaflet map below -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
 </head>
 <body>
     <header>
@@ -18,12 +22,71 @@
     </nav> <!-- end nav -->
     <main>
         <div class="container">
+            <div id="contact-us">
+                <h2>Contact Us</h2>
+                <div id="contact-container">
+                    <div class="contact-info-container">
+                        <h3 class="h3-title" id="find-title">Find Us</h3>
+                        <div class="contact-info"> 
+                            <div id="contact-details">
+                                <p>Terracotta Catering</p>
+                                <p>Neptune Quay</p>
+                                <p>Ipswich</p>
+                                <p>IP4 1LG</p>
+                                <br>
+                                <p>01473 111111</p>
+                                <p>info@terracottacatering.com</p>
+                                <br>
+                                <p>To add social?</p>
+                            </div> 
+                            <div id="mapid">MAP</div>
+                        </div>
+                    </div> <!-- end contact-info-container -->
+                    <div class="contact-form-container">
+                        <h3 class="h3-title">Send us a Message</h3>
+                        <form action="contact.html">
+                            <fieldset id="contact-fieldset">
+                                <!-- <legend><span class="number">1</span>Your details</legend> -->
+                                <label for="name" class="contact-label">Name:</label><br>
+                                <input type="text" id="name" name="user_name" class="contact-field"><br>
+                                
+                                <label for="email" class="contact-label">Email:</label><br>
+                                <input type="email" id="email" name="user_email" class="contact-field"><br>
+                                
+                                <label for="phone" class="contact-label">Phone:</label><br>
+                                <input type="tel" id="phone" name="user_phone" class="contact-field"><br>
+
+                                <label for="message" class="contact-label">Message:</label><br>
+                                <textarea id="message" name="user_message" class="contact-field"></textarea><br>
+                             
+                                <div id="gdpr-div">
+                                    <input type="checkbox" id="gdpr" value="dance" name="user_interest">
+                                    <label for="gdpr" id="checkbox-label" class="contact-label">Please tick this box if you wish to receive marketing information from us. Please see our Privacy Policy for more information on how we use your data</label><br>
+                                </div>
+
+                            </fieldset>  
+                            <div id="button-div">
+                                <button type="submit"><h3>Send</h3></button>
+                            </div>
+                          </form>
+                          
+
+
+                    </div> <!-- end contact-form-container -->
+                </div> <!-- end contact-container -->
+
+            </div> <!-- end contact-us -->
 
         </div>  <!-- end container -->
     </main> <!-- end main -->
     <footer>
 
     </footer> <!-- end footer -->
+    <!-- leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="./js/map.js"></script>
 </body> <!-- end body -->
 </html>
 

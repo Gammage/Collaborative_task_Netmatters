@@ -1,5 +1,17 @@
+// MAIN
+
 //heading pseudo-element underlines
 //use @include nameOfMixin; to add to an element
+@mixin h1-underline-right { ////////////////////////TO ADD
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        right: 0;
+        bottom: -10px;
+        border-bottom: 1.5px solid $grey-light;
+    }
+}
 
 @mixin h1-underline-right {
     &::after {
@@ -29,6 +41,20 @@
         position: absolute;
         width: 100px;
         left: calc(50% - 50px);
+        bottom: -10px;
+        border-bottom: 1.5px solid $grey-light;
+        @content;
+    }
+}
+
+//Added mixin for moving the line left. apologies if this is referenced elsewhere
+
+@mixin h3-underline-left {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        left: 0;
         bottom: -10px;
         border-bottom: 1.5px solid $grey-light;
     }
