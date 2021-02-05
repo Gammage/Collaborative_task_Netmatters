@@ -686,6 +686,11 @@ body nav {
 }
 
 /* line 2, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+#index-services {
+  width: 100%;
+}
+
+/* line 6, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 #index-services-container {
   display: flex;
   flex-direction: column;
@@ -694,33 +699,33 @@ body nav {
 }
 
 @media (min-width: 768px) {
-  /* line 2, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+  /* line 6, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   #index-services-container {
     width: 90%;
   }
 }
 
 @media (min-width: 993px) {
-  /* line 2, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+  /* line 6, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   #index-services-container {
     width: 80%;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 2, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+  /* line 6, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   #index-services-container {
     width: 80%;
   }
 }
 
-/* line 16, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+/* line 20, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 #index-services-container h2,
 #index-services-container h3 {
   text-transform: uppercase;
 }
 
-/* line 20, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+/* line 24, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 #index-services-container h2 {
   padding-top: 30px;
 }
@@ -745,7 +750,7 @@ body nav {
   border-bottom: 1.5px solid #8b8d90;
 }
 
-/* line 29, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+/* line 33, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-services-items {
   display: flex;
   flex-direction: row;
@@ -755,25 +760,25 @@ body nav {
   width: 100%;
 }
 
-/* line 37, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+/* line 41, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-services-items h3 {
   margin-top: 15px;
 }
 
-/* line 40, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+/* line 44, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-services-items p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 46, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+/* line 50, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-service {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* line 50, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+/* line 54, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-service .img-cont {
   max-height: 300px;
   overflow: hidden;
@@ -781,25 +786,32 @@ body nav {
   align-items: center;
 }
 
+@media (max-width: 420px) {
+  /* line 61, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+  .index-service .img-cont {
+    height: 170px;
+  }
+}
+
 @media (min-width: 993px) {
-  /* line 46, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+  /* line 50, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   .index-service {
     width: 30%;
   }
-  /* line 63, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+  /* line 67, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   .index-service .img-cont {
     max-height: 148px;
   }
 }
 
 @media (min-width: 1260px) {
-  /* line 68, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+  /* line 72, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
   .index-service .img-cont {
     max-height: 189px;
   }
 }
 
-/* line 74, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
+/* line 78, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 .index-service img {
   width: 100%;
 }

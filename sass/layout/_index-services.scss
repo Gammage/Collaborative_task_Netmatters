@@ -1,4 +1,8 @@
 
+#index-services {
+    width: 100%;
+}
+
 #index-services-container {
     display: flex;
     flex-direction: column;
@@ -53,10 +57,10 @@
         display: flex;
         align-items: center;
     }
-    @media (min-width: $break-sm) {
-        // .img-cont {
-        //     height: 148px;
-        // }
+    @media (max-width: 420px) {
+        .img-cont {
+            height: 170px; //148
+        }
     }
     @media (min-width: $break-med) {
         width: 30%;
@@ -74,34 +78,3 @@
 .index-service img {
     width: 100%;
 }
-
-
-//need an h2 pseudo element and an h3 pseudo element.
-
-// &::after {
-//     content: "";
-//     position: absolute;
-//     width: 70px;
-//     left: 0px;
-//     bottom: -40px;
-//     border-bottom: 5px solid $light-grey;
-// }
-
-
-// //News images
-// .news img { //////////////small sceens
-//     border-radius: 3px 3px 0px 0px;
-//     border: 1px solid $second-grey;
-//     width: 100%;
-//     margin-bottom: 0px;
-//     margin-top: 0px;
-//     margin-left: 0px;
-//     margin-right: 0px;
-// }
-
-// .news-image-parent { //////////////larger screens only. //container for animation
-//     border-radius: 3px 3px 0px 0px;
-//     border: 1px solid $second-grey;
-//     max-width: 100%;
-//     display: none;
-// }
