@@ -2,7 +2,6 @@
 
 //heading pseudo-element underlines
 //use @include nameOfMixin; to add to an element
-
 @mixin h1-underline-right { ////////////////////////TO ADD
     &::after {
         content: "";
