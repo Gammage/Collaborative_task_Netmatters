@@ -5,7 +5,7 @@
     h3 {
         text-transform: uppercase;
         position: relative;
-    }
+    } 
     
     h2 { 
         @include h2-underline;
@@ -22,6 +22,7 @@
         }
         @media (min-width: $break-lg) {
             width: $content-lg;
+            max-width: $break-lg;
         }
     }
     .h3-title {
@@ -56,6 +57,7 @@
     }
     @media (min-width: $break-lg) {
         width: $content-lg;
+        max-width: $break-lg;
     }
 }
 
