@@ -1,17 +1,25 @@
 #index-partners-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: none;
+    flex-direction: column;
     width: $content-xs;
     margin: 30px auto;
+    padding-bottom: 20px;
     @media (min-width: $break-sm) {
+        display: flex;
         width: $content-sm;
+        .partner-logo {
+            height: 50px;
+            filter: grayscale(100%);  
+        }
     }
     @media (min-width: $break-med) {
         width: $content-med;
     }
     @media (min-width: $break-lg) {
         width: $content-lg;
+        .partner-logo {
+            height: 70px; 
+        }
     }
     h2 {
         @include h2-underline;
@@ -21,13 +29,17 @@
     
 }
 
+#partner-logos {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .logo-container {
     flex-basis: 1;
     display: flex;
     justify-content: center;
-    width: 30%;
+    //width: 30%; //reactivate this if decide want to make the positioning similar to the services 3 columns. Probs not necessary.
 }
 
-.partner-logo {
-    height: 50px;
-}
