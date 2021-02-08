@@ -11,6 +11,7 @@
     }
     @media (min-width: $break-lg) {
         width: $content-lg;
+        max-width: $content-max;
     }
     h2 {
         @include h2-underline;
