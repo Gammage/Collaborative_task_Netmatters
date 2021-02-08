@@ -1,0 +1,173 @@
+
+body {
+
+    main {
+
+        .container{
+
+            #index-slides {
+                width: 100%;
+                background-image:linear-gradient(rgba(0, 0, 0, $header-img-tone), rgba(0, 0, 0, $header-img-tone)), url('../images/slide1-img.jpeg');
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                height: 350px;
+                margin-bottom: 30px;
+
+                #index-slide-container {
+                    width: $content-xs;
+                    margin: auto;
+                    padding: 30px 0px;
+                    height: auto;
+                    
+
+                    p,
+                    i,
+                    h2 {
+                        color: $white;
+                        
+                    }
+
+                    .index-user-testimonial {
+                        margin: 0;
+                        padding: 0;
+                        font-family: $title-font;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+
+
+                    #index-testimonial {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+
+                        #index-quote-left {
+                            display: flex;
+                            flex-direction: column;
+                            width: 10%;
+                            text-align: right;
+                        }
+
+                        #index-testimonial-one {
+                            width: 80%;
+                            position: relative;
+                            @include h3-underline-large;
+                            // margin: 30px 0px;
+                            text-align: center;
+                        }
+
+                        #index-quote-right {
+                            display: flex;
+                            flex-direction: column;
+                            width: 10%;
+                            justify-content: flex-end;
+                            text-align: left;
+                        }
+
+                    }
+
+
+                    #index-testimonial-owner-one {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 20px auto;
+                        text-align: center;
+                    }
+
+                    #index-slide-buttons-container {
+
+
+                        #index-slide-buttons {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            
+
+                            div[id^="index-button-"] {
+                                margin: 0px 30px;
+                                font-size: 10px;
+                            }
+
+                        }
+                    }
+                }
+
+                // #index-slide-buttons-container {
+
+                // }
+            }
+        }
+    }
+}
+
+// @media (min-width: $break-sm) {
+
+    // #body {
+
+    //     #main {
+    
+    //         #index-slides {
+    //             #index-slide-container {
+    //                 #index-testimonial-one {
+    //                     #index-quote-left {}
+    //                     #index-testimonial-text {}
+    //                     #index-quote-right {}
+    //                     #index-testimonial-owner {}
+    //                 }
+    //             }
+    
+    //             #index-slide-buttons-container {
+    
+    //             }
+    //         }
+    //     }
+    // }
+// }
+
+// @media (min-width: $break-med) {
+
+    // #body {
+
+    //     #main {
+    
+    //         #index-slides {
+    //             #index-slide-container {
+    //                 #index-testimonial-one {
+    //                     #index-quote-left {}
+    //                     #index-testimonial-text {}
+    //                     #index-quote-right {}
+    //                     #index-testimonial-owner {}
+    //                 }
+    //             }
+    
+    //             #index-slide-buttons-container {
+    
+    //             }
+    //         }
+    //     }
+    // }
+// }
+
+// @media (min-width: $break-lg) {
+
+    // #body {
+
+    //     #main {
+    
+    //         #index-slides {
+    //             #index-slide-container {
+    //                 #index-testimonial-one {
+    //                     #index-quote-left {}
+    //                     #index-testimonial-text {}
+    //                     #index-quote-right {}
+    //                     #index-testimonial-owner {}
+    //                 }
+    //             }
+    
+    //             #index-slide-buttons-container {
+    
+    //             }
+    //         }
+    //     }
+    // }
+// }

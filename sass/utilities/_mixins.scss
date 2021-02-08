@@ -41,6 +41,19 @@
     }
 }
 
+//the index_slide line is larger then the rest, created another mixin for this
+@mixin h3-underline-large {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 250px;
+        left: calc(50% - 125px);
+        bottom: -10px;
+        border-bottom: 1.5px solid $grey-light;
+        @content;
+    }
+}
+
 //H3 ALIGNED LEFT
 //text align on the heading needs to be set to left for this version.
 @mixin h3-underline-left {
