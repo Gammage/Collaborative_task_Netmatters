@@ -383,6 +383,7 @@ template {
 /* line 12, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_base.scss */
 a {
   text-decoration: none;
+  color: #3c3c3c;
 }
 
 /* line 18, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_base.scss */
@@ -404,6 +405,7 @@ h2 {
 /* line 32, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_base.scss */
 p {
   font-family: "Arial";
+  color: #3c3c3c;
 }
 
 /* line 3, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
