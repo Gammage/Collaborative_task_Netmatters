@@ -1,0 +1,33 @@
+#index-partners-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: $content-xs;
+    margin: 30px auto;
+    @media (min-width: $break-sm) {
+        width: $content-sm;
+    }
+    @media (min-width: $break-med) {
+        width: $content-med;
+    }
+    @media (min-width: $break-lg) {
+        width: $content-lg;
+    }
+    h2 {
+        @include h2-underline;
+        padding-top: 30px;
+        text-transform: uppercase;
+    }
+    
+}
+
+.logo-container {
+    flex-basis: 1;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.partner-logo {
+    height: 50px;
+}
