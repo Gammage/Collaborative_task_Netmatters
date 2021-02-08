@@ -687,6 +687,51 @@ body nav {
   }
 }
 
+/* line 1, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-intro.scss */
+#index-intro-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  /* line 1, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-intro.scss */
+  #index-intro-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 993px) {
+  /* line 1, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-intro.scss */
+  #index-intro-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 1, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-intro.scss */
+  #index-intro-container {
+    width: 80%;
+  }
+}
+
+/* line 15, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-intro.scss */
+#index-intro-container h2 {
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+/* line 19, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/utilities/_mixins.scss */
+#index-intro-container h2::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  left: 0;
+  bottom: -10px;
+  border-bottom: 1.5px solid #8b8d90;
+}
+
 /* line 2, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-services.scss */
 #index-services {
   width: 100%;
