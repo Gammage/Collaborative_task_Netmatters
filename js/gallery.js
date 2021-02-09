@@ -1,7 +1,7 @@
 const modal = document.querySelector(".modal");
-const previews = document.querySelectorAll(".gallery img");
+const previews = document.querySelectorAll("#gallery img"); //changed from DIV to ID
 const original = document.querySelector(".full-img");
-const caption = document.querySelector(".caption");
+//const caption = document.querySelector(".caption");
 
 previews.forEach((preview) => {
     preview.addEventListener('click', () => {
@@ -9,9 +9,9 @@ previews.forEach((preview) => {
         original.classList.add("open");
         //Dynamic change text and image
         const originalSrc = preview.getAttribute("data-original");
-        original.src=`./images/full/${originalSrc}`; 
+        original.src=`./images/gallery/${originalSrc}`; 
         const altText=preview.alt; //gets the alt text
-        caption.textContent = altText;
+        //caption.textContent = altText;
     });
 });
 

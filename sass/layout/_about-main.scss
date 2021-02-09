@@ -36,7 +36,7 @@
 
 #our-story-container,
 #our-food-container,
-#gallery {
+#gallery-container {
     display: flex;
     flex-direction: column;
     width: $content-xs;
@@ -128,15 +128,25 @@
     box-sizing: border-box;
 }
 
-.gallery {
+#gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr)); /*creates a responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(225px,1fr)); /*creates a responsive grid */
     min-height: 100vh;
     grid-gap: 2rem;
+    @media (min-width: 1062px) {
+        grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+        grid-gap: 2rem;
+     }
+
+    @media (min-width: 1360px) {
+        grid-template-columns: repeat(auto-fit, minmax(275px,1fr));
+        grid-gap: 3rem;
+     }
 }
 
 .img-container {
     overflow: hidden;
+    height: 225px;
 }
 
 .img-container img {
