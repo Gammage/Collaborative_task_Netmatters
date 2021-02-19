@@ -406,6 +406,18 @@ h2 {
 p {
   font-family: "Arial";
   color: #3c3c3c;
+  font-size: 16px;
+}
+
+/* line 38, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/base/_base.scss */
+button {
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  color: #af473c;
+  font-weight: 900;
+  padding: 8px 22px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 /* line 3, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_header.scss */
@@ -1031,6 +1043,85 @@ body main .container #index-slides #index-slide-container #index-slide-buttons-c
   flex-basis: 1;
   display: flex;
   justify-content: center;
+}
+
+/* line 1, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+#index-book {
+  background-color: #3c3c3c;
+}
+
+/* line 5, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+#index-book-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* line 13, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+#index-book-container p {
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  /* line 5, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+  #index-book-container {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 25, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+  #index-book-container p {
+    text-align: left;
+    letter-spacing: 2px;
+    width: 70%;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 993px) {
+  /* line 5, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+  #index-book-container {
+    width: 80%;
+  }
+  /* line 34, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+  #index-book-container p {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1260px) {
+  /* line 5, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+  #index-book-container {
+    width: 80%;
+    max-width: 1500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  /* line 43, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+  #index-book-container p {
+    width: 75%;
+  }
+}
+
+/* line 49, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+#book-button {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  /* line 49, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_index-book.scss */
+  #book-button {
+    margin-right: 0;
+    margin-left: auto;
+    align-self: center;
+  }
 }
 
 /* line 3, ../../../../Desktop/Netmatters/pairs-project/Collaborative_task_Netmatters/sass/layout/_footer.scss */

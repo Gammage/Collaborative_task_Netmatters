@@ -32,6 +32,16 @@ h2 {
 p {
     font-family: $p-font;
     color: $grey-dark;
+    font-size: $p-size-sm;
 }
 
+button {
+        font-family: $title-font;
+        letter-spacing: 2px;
+        color: $red;
+        font-weight: 900; ///maybe download a bold version?
+        padding: 8px 22px;
+        font-size: $p-size-sm;
+        text-transform: uppercase;
+}
 

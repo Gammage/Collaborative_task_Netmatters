@@ -20,7 +20,7 @@ $break-sm: 768px;
 $break-med: 993px;
 $break-lg: 1260px;
 
-//I've added a max content width of 1500px to each section of the homepage.
+//I've added a max content width of 1500px to each section of the homepage. Stops the content getting too wide on super wide screens
 $content-max: 1500px;
 
 //////////////////////////////////////////////////////////////////////////////////////////
@@ -44,6 +44,7 @@ $p-font: 'Arial'; //no idea yet, have just put arial in for the time being until
 $h2-size: 30px;
 $h3-size: 25px;
 $p-size: 20px;
+$p-size-sm: 16px;
 
  
 //////////////////////////////////////////////////////////////////////////////////////////
