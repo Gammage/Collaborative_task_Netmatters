@@ -1,6 +1,10 @@
 
 #index-services {
     width: 100%;
+    padding-bottom: 10px;
+    @media (min-width: $break-lg) {
+        padding-bottom: 20px;
+    }
 }
 
 #index-services-container {
@@ -28,6 +32,7 @@
     }
     h3 {
         @include h3-underline;
+        margin-bottom: 15px;
     }
 }
 
@@ -44,7 +49,7 @@
     }
     p {
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 }
 

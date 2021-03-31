@@ -26,7 +26,7 @@
     }
 
     h3 {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             @include h3-underline-left;
     }
 
@@ -130,18 +130,13 @@
 
 #gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(225px,1fr)); /*creates a responsive grid */
-    min-height: 100vh;
+    grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); //creates a responsive grid
+    grid-template-rows: auto;
     grid-gap: 2rem;
-    @media (min-width: 1062px) {
-        grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
-        grid-gap: 2rem;
-     }
-
-    @media (min-width: 1360px) {
-        grid-template-columns: repeat(auto-fit, minmax(275px,1fr));
-        grid-gap: 3rem;
-     }
+    max-width: $content-max;
+    @media (min-width: 1600px) {
+        grid-template-columns: repeat(auto-fill, minmax(min(280px, 350px), 1fr));
+    }
 }
 
 .img-container {

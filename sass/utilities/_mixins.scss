@@ -21,7 +21,7 @@
         position: absolute;
         width: 130px;
         left: 0;
-        bottom: -10px;
+        bottom: -20px;
         border-bottom: 1.5px solid $grey-light;
         @content;
     } 
@@ -35,7 +35,7 @@
         position: absolute;
         width: 100px;
         left: calc(50% - 50px);
-        bottom: -10px;
+        bottom: -15px;
         border-bottom: 1.5px solid $grey-light;
         @content;
     }
@@ -48,7 +48,7 @@
         position: absolute;
         width: 250px;
         left: calc(50% - 125px);
-        bottom: -10px;
+        bottom: -15px;
         border-bottom: 1.5px solid $grey-light;
         @content;
     }
@@ -62,7 +62,7 @@
         position: absolute;
         width: 100px;
         left: 0;
-        bottom: -10px;
+        bottom: -20px;
         border-bottom: 1.5px solid $grey-light;
         @content;
     }
