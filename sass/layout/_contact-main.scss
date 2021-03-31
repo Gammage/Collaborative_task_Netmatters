@@ -189,9 +189,11 @@ form {
         margin: 0 auto;
         background-color: $red;
         border: none; ///////////////////need to set up a button style guide
-        h3 {
-            margin-top: 0;
-            padding: 15px 50px;
+        padding: 15px 50px;
+        color: $white;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.9;
         }
     }
 }
