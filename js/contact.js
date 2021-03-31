@@ -23,11 +23,15 @@ const phoneInput = document.querySelector("#phone");
 const messageInput = document.querySelector("#message");
 const privacyInput = document.querySelector("#gdpr");
 
-let formSubmissions = [];
+const formSubmissions = [];
 
+document.addEventListener('DOMContentLoaded', () => {
+    //The form data that has been submitted will print to the console so that you can see that it has saved
+    console.log(localStorage.getItem('formData'));
+})
 
 submitButton.addEventListener('click', () => {
-    //TESTING that query selectors are working and obtainig the values.
+    //TESTING that query selectors are working and obtaining the values.
     // console.log(nameInput.value); //gets text input
     // console.log(emailInput.value); //gets text input
     // console.log(phoneInput.value); //gets text input
@@ -41,15 +45,12 @@ submitButton.addEventListener('click', () => {
         message: messageInput.value
     };
 
+    //adds the new data to the existing data stored in the formSubmissions array
     formSubmissions.push(submittedData);
 
-    localStorage.setItem("formData", JSON.stringify(submittedData));
+    localStorage.setItem("formData", JSON.stringify(formSubmissions));
 
     console.log(formSubmissions);
-
-    setTimeout(() => {
-        console.log(localStorage.getItem('formData'));
-    }, 1000);
 
     // if(nameInput:valid) {
     //     alert('form submitted');
