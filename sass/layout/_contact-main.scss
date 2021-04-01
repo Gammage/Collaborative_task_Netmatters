@@ -216,3 +216,24 @@ form {
         color: $white;
     }
 }
+
+
+
+.form-submitted {
+    background-color: $grey-dark;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    transition: all 1.5s ease-out; //this is for sliding the message up offscreen in the JS
+}
+
+#success-message {
+    color: $white;
+}

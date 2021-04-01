@@ -1,17 +1,8 @@
-///save the data to an array in local storage?
 
-// localStorage.setItem("username", "marijn");
-// console.log(localStorage.getItem("username"));
-// // → marijn
-// localStorage.removeItem("username");
-
-//use JS objects - have an array of objects (submission)
+//use JS objects - have an array of objects (one object = one submitted form)
 //submit button - add event listener. 
-//may need a separate function for each field. returns true or false for each field.
-//if all true then create the object to store the data and push it to the array
-// console log valid / invalid
-//console log the text fields
-//maybe have a popup 'submission successful'
+//if all true then store the data and push it to the array
+//add a popup 'submission successful'
 
 
 const submitButton = document.querySelector("#button-div button");
@@ -20,10 +11,12 @@ const emailInput = document.querySelector("#email");
 const phoneInput = document.querySelector("#phone");
 const messageInput = document.querySelector("#message");
 const privacyInput = document.querySelector("#gdpr");
+const successMessage = document.querySelector(".form-submitted");
+const contactSection = document.querySelector("#contact-us");
 
-let formSubmissions = [];
-
-let submittedData = {
+let formSubmitted = localStorage.getItem('form-submitted'); //Has the form been submitted? This is a true/false value that has to be saved to local storage otherwise it is lost on refresh
+let formSubmissions = []; //an array containing an objects of form data (one for each form submission)
+let submittedData = {      //the data saved to each object
     name: nameInput.value, 
     email: emailInput.value, 
     phone: phoneInput.value,
@@ -31,23 +24,45 @@ let submittedData = {
 };
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+//WHEN THE PAGE LOADS
 
 document.addEventListener('DOMContentLoaded', () => {
-    //The form data that has been submitted will print to the console so that you can see that it has saved
-    console.log(localStorage.getItem('formData'));
-
-
-    //to add JSON.parse()
-    //On refresh the form submissions array is being reset. So the new object is being pushed to an empty array.
+    //On refresh the form submissions array is reset. This means that new object is being pushed to an empty array which is why...
+    //if there is alreay data saved in local storage then this needs to be retrieved and saved.
     const storageFormData = localStorage.getItem('formData');
+    const parsedStorageFormData = JSON.parse(storageFormData);
+    console.log(storageFormData);
     
-    //if there is already storageForm Data then need to save this to the formSubmissions array
-    if(formSubmissions.value === null) {
-        console.log('there is no local data yet');
-    } else {
-        formSubmissions = [{storageFormData}];
+    //save the storageFormData to the formSubmissions array
+    formSubmissions.push(parsedStorageFormData);
+
+    //The form data that has been submitted will print to the console so that you can see that it has saved
+    //console.log(parsedStorageFormData);
+    console.log(formSubmissions);
+
+
+    //hide the success message (if displayed) after a certain amount of time
+    if(formSubmitted === "false") {           //it is in "" because it is saved as a string in local storage
+        successMessage.style.display = "none";
+    } else if(formSubmitted === "true") {     //it is in "" because it is saved as a string in local storage
+        successMessage.style.display = "flex";
+        contactSection.style.marginTop = "50px";
+        setTimeout( () => { 
+            successMessage.style.transform = "translateY(-50px)"
+            contactSection.style.transition = "all 1.5s ease-out"; //margin transition
+            contactSection.style.marginTop = "0px";
+            formSubmitted = false;
+            localStorage.setItem("form-submitted", formSubmitted);
+        }, 5000);
+        setTimeout( () => { 
+            successMessage.style.display = "none";
+        }, 7000);
     }
 })
+
+////////////////////////////////////////////////////////////////////////////////////////
+//WHEN THE FORM IS SUBMITTED
 
 submitButton.addEventListener('click', (event) => {
     submittedData = {
@@ -57,18 +72,14 @@ submitButton.addEventListener('click', (event) => {
         message: messageInput.value,
     };
 
+    //IF INPUT IS VALID AND THE DATA CAN BE SUBMITED DO THIS. Otherwise the default HTML validation will do its thing.
     if(nameInput.validity.valid && emailInput.validity.valid && phoneInput.validity.valid && messageInput.validity.valid && privacyInput.checked == true) {
-       
         //adds the new data to the existing data stored in the formSubmissions array
         formSubmissions.push(submittedData);
         //saves the updated formSubmissions array in local storage so that both the current and previous form data can be viewed
         localStorage.setItem("formData", JSON.stringify(formSubmissions));
-        alert('form submitted');
+        formSubmitted = true;
+        localStorage.setItem("form-submitted", formSubmitted);
+        //alert('form submitted'); for testing.
     }
 });
-
-
-//may come back to
- //event.preventDefault();
-
-
