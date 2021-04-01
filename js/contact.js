@@ -14,8 +14,16 @@ const privacyInput = document.querySelector("#gdpr");
 const successMessage = document.querySelector(".form-submitted");
 const contactSection = document.querySelector("#contact-us");
 
+
 let formSubmitted = localStorage.getItem('form-submitted'); //Has the form been submitted? This is a true/false value that has to be saved to local storage otherwise it is lost on refresh
-let formSubmissions = []; //an array containing an objects of form data (one for each form submission)
+
+//On refresh the form submissions array is reset. This means that new object is being pushed to an empty array which is why...
+//if there is already data saved in local storage then this needs to be retrieved and saved.
+const storageFormData = localStorage.getItem('formData');
+const parsedStorageFormData = JSON.parse(storageFormData);
+const formSubmissions = [parsedStorageFormData]; //an array containing an objects of form data (one for each form submission, (in theory))
+
+
 let submittedData = {      //the data saved to each object
     name: nameInput.value, 
     email: emailInput.value, 
@@ -27,20 +35,9 @@ let submittedData = {      //the data saved to each object
 //////////////////////////////////////////////////////////////////////////////////////////////
 //WHEN THE PAGE LOADS
 
-document.addEventListener('DOMContentLoaded', () => {
-    //On refresh the form submissions array is reset. This means that new object is being pushed to an empty array which is why...
-    //if there is alreay data saved in local storage then this needs to be retrieved and saved.
-    const storageFormData = localStorage.getItem('formData');
-    const parsedStorageFormData = JSON.parse(storageFormData);
-    console.log(parsedStorageFormData);
-    
-    //save the storageFormData to the formSubmissions array
-    formSubmissions.push(parsedStorageFormData);
-
+document.addEventListener('DOMContentLoaded', (e) => {
     //The form data that has been submitted will print to the console so that you can see that it has saved
-    //console.log(parsedStorageFormData);
     console.log(formSubmissions);
-
 
     //hide the success message (if displayed) after a certain amount of time
     if(formSubmitted === "false") {           //it is in "" because it is saved as a string in local storage
@@ -65,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //WHEN THE FORM IS SUBMITTED
 
 submitButton.addEventListener('click', (event) => {
+    // event.preventDefault(); //for testing only
     submittedData = {
         name: nameInput.value, 
         email: emailInput.value, 
@@ -82,19 +80,3 @@ submitButton.addEventListener('click', (event) => {
         localStorage.setItem("form-submitted", formSubmitted); //confirm that the form has been submitted, saving this value to the local server
     }
 });
-
-
-
-
-// // Get the existing data
-// var existing = localStorage.getItem('myFavoriteSandwich');
-
-// // If no existing data, create an array
-// // Otherwise, convert the localStorage string to an array
-// existing = existing ? existing.split(',') : [];
-
-// // Add new data to localStorage Array
-// existing.push('tuna');
-
-// // Save back to localStorage
-// localStorage.setItem('myFavoriteSandwich', existing.toString());

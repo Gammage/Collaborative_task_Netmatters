@@ -1,3 +1,6 @@
+//code learned through this Dev Ed tutorial: https://www.youtube.com/watch?v=4SQXOA8Z-lo
+
+
 const modal = document.querySelector(".modal");
 const previews = document.querySelectorAll("#gallery img"); //changed from DIV to ID
 const original = document.querySelector(".full-img");
