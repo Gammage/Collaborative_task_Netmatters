@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //if there is alreay data saved in local storage then this needs to be retrieved and saved.
     const storageFormData = localStorage.getItem('formData');
     const parsedStorageFormData = JSON.parse(storageFormData);
-    console.log(storageFormData);
+    console.log(parsedStorageFormData);
     
     //save the storageFormData to the formSubmissions array
     formSubmissions.push(parsedStorageFormData);
@@ -79,7 +79,22 @@ submitButton.addEventListener('click', (event) => {
         //saves the updated formSubmissions array in local storage so that both the current and previous form data can be viewed
         localStorage.setItem("formData", JSON.stringify(formSubmissions));
         formSubmitted = true;
-        localStorage.setItem("form-submitted", formSubmitted);
-        //alert('form submitted'); for testing.
+        localStorage.setItem("form-submitted", formSubmitted); //confirm that the form has been submitted, saving this value to the local server
     }
 });
+
+
+
+
+// // Get the existing data
+// var existing = localStorage.getItem('myFavoriteSandwich');
+
+// // If no existing data, create an array
+// // Otherwise, convert the localStorage string to an array
+// existing = existing ? existing.split(',') : [];
+
+// // Add new data to localStorage Array
+// existing.push('tuna');
+
+// // Save back to localStorage
+// localStorage.setItem('myFavoriteSandwich', existing.toString());
